@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UrbanCart</title>
+  <link rel="stylesheet" href="styletest.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+ 
+  
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/logoff-removebg-preview.png" alt="logo" width="200px"></a>
+      </div>
+      <button id="theme-toggle" class="btn">Toggle Dark Mode</button>
+
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+
+<div class="hero-slider">
+    <div class="slide">
+      <img src="images/bannerfinal1.png" alt="Discover Your New Look" class="slider-image">
+      <div class="slider-text" id="one">
+        <h1>Discover Your New Look</h1>
+        <p>Find the best styles for every occasion</p>
+        <a href="products.html" class="btn1">Shop Now &#8594;</a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/bannerfinal2.png" alt="Upgrade Your Wardrobe" class="slider-image">
+      <div class="slider-text" id="two">
+        <h1>Upgrade Your Wardrobe</h1>
+        <p>Latest collections are available now</p>
+        <a href="products.html" class="btn2">Shop Now &#8594;</a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/bannerfinal3.png" alt="Summer Sale is Here" class="slider-image">
+      <div class="slider-text"  id="three">
+        <h1>Winter Collection is Here</h1>
+        <p>Get up to 50% off on selected jewelery</p>
+        <a href="products.html" class="btn3">Shop Now &#8594;</a>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <!-- Featured ProductsSection -->
+
+<div class="small-container">
+  <h2 class="title">Featured Products</h2>
+  <div class="featured-products-slider row">
+    <!-- Products will be dynamically inserted here -->
+  </div>
+</div>
+
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phone.</p>
+          <div class="app-logo">
+            <img src="images/play-store.png">
+            <img src="images/app-store.png">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/final.png" >
+          <p>Elevate Your Everyday, Embrace the Urban Way.</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Return Policy</li>
+            <li>Exchange Policy</li>
+            <li>Customer care</li>
+
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2024 - Keerthana Muthupandi</p>
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script> 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.hero-slider').slick({
+        dots: true, 
+        infinite: true, 
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true, 
+        autoplaySpeed: 1700,
+        fade: true, 
+        cssEase: 'linear', 
+        arrows: false 
+      });
+    });
+  </script>
+</body>
+</html>
